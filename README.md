@@ -11,7 +11,7 @@
 
 - To **locally harden** (RTL2GDS) the project, follow the [TinyTapeout Guide](https://tinytapeout.com/guides/local-hardening/). This document seems to be in a flux while TT is moving to OpenLane2. Few tweaks needed (as of 08/15/24):
   - The recommendation for Python version is 3.11 but my 3.10.12 seems to run fine. Was confirmed by the developers on the discord channel. May make a difference during reporting is what the developers think.
-  - Install `python3-tk` to solve _module tkinter not found_ error: `sudo apt install python3-tk
+  - Install `python3-tk` to solve _module tkinter not found_ error: `sudo apt install python3-tk`
   - Docker needs to be installed. When installing Docker, you should choose the "_WSL2 integration_" (default) option instead of Hyper-V.
   - **Note** The above option will integrate with the default distro. If you have multiple distros (eg. Ubuntu-20.04 and 22.04) and you are running the hardening on a non-default distro, you need to set that in the Docker settings: `Settings -> Resources -> WSL Integration` and _enable_ the integration for the used distro.
 
